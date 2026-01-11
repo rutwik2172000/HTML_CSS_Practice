@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM 4</title>
+    <style>
+      body {
+        display: flex;
+      }
+      form {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      input {
+        padding: 12px;
+        border-radius: 12px;
+        border: 1px solid rgb(214, 208, 208);
+      }
+      input.submit {
+        background: rgb(248, 202, 142);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="submit">
+      <h3>FOURTH FORM</h3>
+      <h1>FOOD SELECTION FORM</h1>
+
+      <label>Name : </label>
+      <input type="text" id="name" placeholder="Enter Name" />
+     
+      <label for="number">Number :</label>
+      <input type="number" id="number" placeholder="Enter Number" />
+
+      <label>Food items/types:</label>
+      <div>
+        <input type="checkbox" id="html" name="Tech" value="HTML" />
+        <label for="html">Italian</label><br />
+      </div>
+      <div>
+        <input type="checkbox" id="css" name="Tech" value="CSS" />
+        <label for="css">Indian</label><br />
+      </div>
+      <div>
+        <input type="checkbox" id="Bootstrap" name="Tech" value="Bootstrap" />
+        <label for="Bootstrap">Chinese</label><br />
+      </div>
+      <div>
+        <input type="checkbox" id="Js" name="Tech" value="Js" />
+        <label for="Js">Japanies</label><br />
+      </div>
+
+      <input class="submit" type="submit" />
+    </form>
+  </body>
+</html>

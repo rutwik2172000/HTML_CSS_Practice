@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 2</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+    }
+    form {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    input {
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid rgb(214, 208, 208);
+    }
+    input.submit {
+      background: rgb(164, 255, 104);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      margin-top: 12px;
+    }
+    div.radio {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <body>
+    <form action="submit.html" method="get">
+      <h3>THIRD FORM</h3>
+      <h1>SURVEY FORM</h1>
+
+      <label>Name : </label>
+      <input type="text" id="name" placeholder="Enter Name" />
+      <br />
+      <label for="number">Number :</label>
+      <input type="number" id="number" placeholder="Enter Number" />
+      <br />
+      <label>Gender</label>
+      <div class="radio">
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+      </div>
+      <div class="radio">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+      </div>
+      <label>Vegetarian or NonVegetarian</label>
+      <div class="radio">
+        <label for="Vegetarian">Vegetarian</label>
+        <input type="radio" id="Vegetarian" name="foodType" value="Vegetarian" />
+      </div>
+      <div class="radio">
+        <label for="NonVegetarian">NonVegetarian</label>
+        <input type="radio" id="NonVegetarian" name="foodType" value="NonVegetarian" />
+      </div>
+     
+      <!-- <label for="appointment">Schedule appointment :</label>
+      <input type="datetime-local" id="appointment" />  -->
+      <input class="submit" type="submit" />
+    </form>
+  </body>
+</html>

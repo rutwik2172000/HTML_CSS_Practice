@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+</head>
+<body>
+    <h2>Payment Form</h2>
+
+    <form action="#" method="post">
+
+        <h3>Personal Information</h3>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <h3>Payment Method</h3>
+
+        <input type="radio" id="card" name="payment" value="Card" required> 
+        <label for="card">Credit / Debit Card</label><br>
+
+        <input type="radio" id="upi" name="payment" value="UPI"> 
+        <label for="upi">UPI</label><br>
+
+        <h3>Enter Payment Details</h3>
+
+        <!-- Card Details -->
+        <label for="cardname">Name on Card:</label><br>
+        <input type="text" id="cardname" name="cardname"><br><br>
+
+        <label for="cardnumber">Card Number:</label><br>
+        <input type="text" id="cardnumber" name="cardnumber" maxlength="16" pattern="[0-9]{16}" title="Enter 16 digit card number"><br><br>
+
+        <label for="expdate">Expiry Date:</label><br>
+        <input type="month" id="expdate" name="expdate"><br><br>
+
+        <label for="cvv">CVV:</label><br>
+        <input type="password" id="cvv" name="cvv" maxlength="3" pattern="[0-9]{3}" title="Enter 3 digit CVV"><br><br>
+
+        <label for="upiid">UPI ID (example: name@upi):</label><br>
+        <input type="text" id="upiid" name="upiid" placeholder="yourname@upi"><br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I confirm that the above details are correct</label><br><br>
+
+        <input type="submit" value="Proceed to Pay">
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>

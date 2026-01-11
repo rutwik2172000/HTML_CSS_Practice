@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donation Form</title>
+</head>
+<body>
+    <h2>Donation Form</h2>
+
+    <form action="#" method="post">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label>Donation Amount:</label><br>
+        <input type="radio" id="amount10" name="amount" value="10"> $10
+        <input type="radio" id="amount25" name="amount" value="25"> $25
+        <input type="radio" id="amount50" name="amount" value="50"> $50
+        <input type="radio" id="amountOther" name="amount" value="other"> Other<br><br>
+
+        <label for="customAmount">If Other, Enter Amount ($):</label><br>
+        <input type="number" id="customAmount" name="customAmount" min="1"><br><br>
+
+        <label>Donation Type:</label><br>
+        <input type="checkbox" id="oneTime" name="donationType" value="One Time"> One-Time
+        <input type="checkbox" id="monthly" name="donationType" value="Monthly"> Monthly<br><br>
+
+        <label for="message">Message / Note (optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Donate Now">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>
