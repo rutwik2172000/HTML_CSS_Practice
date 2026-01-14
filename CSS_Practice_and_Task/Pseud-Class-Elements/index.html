@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        #an1:visited{
+             color: purple; 
+        }
+
+        #an2:hover{
+            color: white;
+            background-color: blue;
+        }
+
+        #an3:hover{
+            color: red;
+            background-color: yellow;
+        }
+
+        #an4:hover{
+            color: red;
+            background-color: yellow;
+        }
+
+        p:hover{
+            color:green;
+        }
+
+        img:hover{
+            border: 3px solid orange;
+        }
+
+        #inp1:focus{
+            background-color: lightblue ;
+            color: darkblue;
+        }
+
+        #inp2:disabled{
+            background-color: lightgray ;
+        }
+
+        #inp3:checked{
+            height: 80px;
+            width: 80px;
+        }
+
+        #inp4:required{
+            border: 2px dashed red ;
+        }
+
+        #inp5:read-only{
+           color: darkgreen ;
+        }
+
+        #inp6:valid{
+            color: lightcoral ;
+        }
+
+        #inp6:valid{
+            background-color: rgb(0, 180, 0) ;
+        }
+
+        li:first-child {
+            background-color: lightcoral;
+        }
+
+        li:last-child {
+            background-color: lightgreen;
+        }
+
+        li:nth-child(3) {
+            background-color: lightblue;
+        }
+
+        li:empty {
+            background-color: gold;
+        }
+
+
+        </style>
+</head>
+<body>
+     <a href="#####" id="an1">Telegram</a>
+     <a href="######" id="an2">Twitter</a>
+     <a href="######" id="an3">LinkedIn</a>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+    <img src="https://images.pexels.com/photos/17976735/pexels-photo-17976735.jpeg" height="200" width="200" alt="">
+
+    <a href="https://www.google.com" id="an3">Active Link</a>
+    <a href="https://www.twitter.com" id="an4">Regular Link</a>
+
+    <form action="">
+        <input type="text" id="inp1" placeholder="focus here">
+        <input type="text" id="inp2" placeholder="disabled field" disabled>
+        <input type="checkbox" id="inp3" checked>
+        <input type="text" id="inp4" placeholder="Required field" required>
+        <input type="text" id="inp5" readonly value="Read-only field">
+        <input type="email" id="inp6" placeholder="Enter yout email">
+        <input type="submit" valur="Submit"><br><br>
+    </form>
+
+    <ui>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li></li>
+        <li>Grapes</li>
+        <li>Kiwi</li>
+    </ui>
+    
+</html>

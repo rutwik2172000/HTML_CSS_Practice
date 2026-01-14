@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Example</title>
+    
+    <style>
+        h1::before {
+            content: "Greetings ";
+            color: crimson;
+        }
+
+        h1::after {
+            content: " Welcome ";
+            color: orange;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p::first-line {
+            color: darkgreen;
+            background-color: pink ;
+        }
+
+        p::first-letter {
+            font-size: 45px;
+            color: yellow ;
+        }
+
+        input::placeholder{
+            color:teal;
+        }
+
+        span::selection {
+            color:white;
+            background-color: darkblue;
+        }
+
+        span {
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+      <h1>My Website</h1>
+
+      <p>
+        Economics is the social science that studies how societies produce, distribute, and consume goods 
+        and services,focusing on the choices people, businesses,and governments make when resources are limited. 
+        It examines concepts like scarcity, incentives, and decision-making, encompassing fields from microeconomics (individual markets) to macroeconomics (national and global economies). 
+      </p>
+
+      <input type="text" placeholder="Type your email here">
+      <hr><br>
+
+      <span>
+        "ui" likely refers to User Interface, the bridge between a human and a computer or device. 
+        A User Interface includes all the visual elements, navigational controls, and input features 
+        a person interacts with, such as buttons, screens, menus, and voice commands.
+      </span>
+
+      <p>
+        The importance of User Interface (UI) design lies in its ability to improve user engagement, increase conversion rates, build trust, and create a positive brand perception. 
+        A well-designed UI provides seamless navigation, intuitive interaction, and accessibility for diverse users, making complex systems user-friendly and efficient. 
+        Ultimately, a strong UI enhances the overall user experience, leading to increased user satisfaction, retention, and business success. 
+      </p>
+</body>
+</html>
