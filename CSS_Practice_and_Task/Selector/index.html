@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+       
+        #idExample {
+            color: red;
+        }
+
+        
+        .classExample {
+            color: blue;
+        }
+
+        
+        #idExample, .classExample {
+            background-color: lightyellow;
+        }
+
+        
+        section div span {
+            color: violet;
+        }
+
+    
+        section > div > span {
+            color: green;
+        }
+
+         input[type="text"]{
+            background-color:lightgray ;
+         }
+         input[type="email"]{
+            background-color:lightgreen ;
+         }
+
+         a[href="https://linkedin.com"]{
+            color:darkred ;
+         }
+         a[href="https://github.com"]{
+            color:darkblue ;
+         }
+
+        *{
+             border: 1px solid gray; 
+
+        }
+
+        i {
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="idExample">This paragraph is styled using ID Selector.</p>
+    <p class="classExample">This paragraph is styled using Class Selector.</p>
+    <p>This paragraph has no id or class.</p>
+
+    <section>
+        <div>
+            <p>
+               <span>This span is styled using Descendant and Child Combinator.</span> 
+            </p>
+        </div>
+    </section>
+
+    <h3>Inputs with Attribute Selectors</h3>
+    <input type="text" placeholder="Enter Name"><br><br>
+    <input type="email" placeholder="Enter Email"><br><br>
+
+    <h3>Anchor Tags with Attribute Selectors</h3>
+    <a href="https://google.com">google</a><br>
+    <a href="https://facebook.com">facebook</a><br>
+
+    <h3>Italic Tags using Element Selector</h3>
+    <i>This italic text is styled using Element Selector.</i><br>
+    <i>Another example styled with Element Selector.</i><br>
+
+</body>
+</html>
